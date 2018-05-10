@@ -2,10 +2,14 @@
   "name": "typescript-pattern-match",
   "version": "0.1.0",
   "description": "Pattern Matching with More Complex Scrutinees",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "lint": "tslint --project tsconfig.json && npm run tsc-check",
+    "prepublishOnly": "npm run build",
     "test": "jest",
+    "test:watch": "jest --watch",
     "tsc-check": "tsc --noEmit"
   },
   "repository": {
@@ -48,6 +52,9 @@
       "jsx",
       "json",
       "node"
+    ],
+    "roots": [
+      "src"
     ]
   }
 }
