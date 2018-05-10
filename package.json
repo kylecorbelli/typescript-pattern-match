@@ -1,0 +1,53 @@
+{
+  "name": "typescript-pattern-match",
+  "version": "0.1.0",
+  "description": "Pattern Matching with More Complex Scrutinees",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json && npm run tsc-check",
+    "test": "jest",
+    "tsc-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kylecorbelli/typescript-pattern-match.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Pattern Match",
+    "Pattern Matching",
+    "switch",
+    "Elm",
+    "Haskell",
+    "ReasonML"
+  ],
+  "author": "Kyle Corbelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylecorbelli/typescript-pattern-match/issues"
+  },
+  "homepage": "https://github.com/kylecorbelli/typescript-pattern-match#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "codecov": "^3.0.2",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.5",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

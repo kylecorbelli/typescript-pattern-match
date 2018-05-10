@@ -1,0 +1,7 @@
+machine:
+  node:
+    version: 8.4.0
+test:
+  override:
+    - npm test -- --coverage
+    - ~/typescript-pattern-match/node_modules/.bin/codecov -t $CODECOV_TOKEN
