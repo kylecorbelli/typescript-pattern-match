@@ -6,10 +6,12 @@
     "jsRules": {},
     "rules": {
       "curly": [ true, "ignore-same-line" ],
+      "interface-name": false,
       "only-arrow-functions": false,
       "quotemark": [ true, "single" ],
       "semicolon": [ true, "never" ],
-      "space-before-function-paren": true
+      "space-before-function-paren": true,
+      "trailing-comma": false
     },
     "rulesDirectory": []
   }

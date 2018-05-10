@@ -8,8 +8,7 @@ function matchesScrutinee<A, B> (scrutinee: A, caseBlock: CaseBlock<A, B>): bool
 }
 
 export function patternMatch<A, B> (scrutinee: A, cases: ReadonlyArray<CaseBlock<A, B>>, defaultBlock: () => B): B {
-  for (let i = 0; i < cases.length; i++) {
-    let currentCase: CaseBlock<A, B> = cases[i]
+  for (const currentCase of cases) {
     if (matchesScrutinee(scrutinee, currentCase)) return currentCase.do()
   }
   return defaultBlock()

@@ -18,7 +18,7 @@ describe('patternMatch', () => {
         () => {
           return 712
         })
-    
+
     it('matches provided cases', () => {
       expect(matchStringToNumber('one')).toBe(1)
       expect(matchStringToNumber('two')).toBe(2)
